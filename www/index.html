@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Iglesias en Tachira</title>
+    <link rel="stylesheet" href="css/toursim.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel='stylesheet' href='css/jquery.mobile.structure-1.4.5.css' />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery.mobile-1.4.5.min.js'></script>
+    <script>
+           $(document).on("mobileinit", function() {
+               $.mobile.toolbar.prototype.options.addBackBtn = true;
+               $.mobile.toolbar.prototype.options.backBtnText = "Volver";
+           });
+       </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG8PwrVPA2llwolh7KtXPqTIwhowcJm-g">
+    </script>
+
+  </head>
+  <body>
+    <!-- Main Page -->
+    <div id='main' data-role='page' data-theme='b'>
+            <div data-role='header' data-theme='b'>
+              <h1>Turismo Religioso</h1>
+            </div>
+        <div id='content' data-role='content' data-theme='b' class="home-content">
+
+
+          <div class="ui-grid-a">
+              <div class="ui-block-a" align="center">
+              <div class="polaroid incli-izq"><img src="imgs/igl-basilicatariba.jpg"  alt="Tariba">
+                <p>Basílica de Táriba</p>
+              </div>
+              </div>
+              <div class="ui-block-b" align="center">
+              <div class="polaroid incli-der">
+                <img src="imgs/igl-elangel.jpg" alt="El Angel">
+                 <p>Iglesia el Ángel</p>
+              </div>
+              </div>
+          </div><!-- /grid-a -->
+<h3 class="titulo">Iglesias en Táchira</h3>
+          <div class="ui-grid-a">
+              <div class="ui-block-a" align="center">
+              <div class="polaroid incli-der"> <img src="imgs/igl-elcobre.jpg"  alt="">
+                <p>San Bartolomé de Vargas</p>
+               </div>
+              </div>
+              <div class="ui-block-b" align="center">
+              <div class="polaroid">
+                <img src="imgs/igl-rubio2.jpg" alt="">
+                <p>Santa Bárbara</p>
+              </div>
+              </div>
+          </div>
+          </div>
+
+          <ul data-role="listview" data-theme='b' data-inset="true" >
+            <li> <a href="iglesias.html"> <img src="imgs/church.png" alt="Ver Lugares" class="ul-li-icon ui-corner-none">Iglesias</a> </li>
+            <li> <a href="mapa/mapa-global.html"> <img src="imgs/map-icon-16.png" alt="Ver Mapa" class="ul-li-icon">Mapa</a></li>
+            <li> <a href="#"> <img src="imgs/info.png" alt="Acerca" class="ul-li-icon">Acerca de</a></li>
+          </ul>
+      </div>
+  </body>
+
+</html>
